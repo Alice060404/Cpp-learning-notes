@@ -1,3 +1,8 @@
+[MindMap](./Visibility_and_Encapsulation.png)
+
+[demo](./demo.cpp)
+
+
 # C++ 学习笔记：可见性与访问控制 (Visibility & Access Control)
 
 > **核心哲学**：可见性是写给**程序员**看的，而不是写给 CPU 看的。
