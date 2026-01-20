@@ -17,6 +17,7 @@ protected:
     std::string ownerName;
 
 public:
+    //初始化列表
     PaymentMethod(std::string name) : ownerName(name) {}
 
     // 【重要拓展】虚析构函数
