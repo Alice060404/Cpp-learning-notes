@@ -11,11 +11,11 @@
 // 这里的 arr 虽然写着 int arr[]，但实际上它只是一个 int* 指针
 void printArraySize(int arr[], size_t explicitSize)
 {
-    // ? 错误做法：在这里使用 sizeof(arr)
+    //  错误做法：在这里使用 sizeof(arr)
     // 在 64 位系统上，这里通常输出 8 (指针大小)，而不是数组总字节数
     std::cout << "[Function] sizeof(arr) inside function: " << sizeof(arr) << " bytes (Pointer size!)" << std::endl;
 
-    // ? 正确做法：依赖传递进来的 explicitSize
+    //  正确做法：依赖传递进来的 explicitSize
     std::cout << "[Function] Printing array using explicit size: ";
     for (size_t i = 0; i < explicitSize; ++i)
     {
