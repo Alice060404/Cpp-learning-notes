@@ -1,8 +1,4 @@
-在C++中，函数虽然在语法上只能返回一个值，但在实际开发中，我们有多种成熟的模式来实现“返回多个不同类型的值”。
-
-
-
----
+[MindMap](./structured_binding.png)
 
 ### 1. C++17 结构化绑定 (Structured Binding) —— 最推荐
 
