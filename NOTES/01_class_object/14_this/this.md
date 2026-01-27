@@ -67,7 +67,6 @@
 /*
  * 文件名: this_pointer_demo.cpp
  * 描述: 演示 this 指针的本质、链式调用、Const 特性及自销毁陷阱
- * 适用: C++ 学习笔记 / GitHub Archive
  */
 
 #include <iostream>

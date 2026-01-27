@@ -81,7 +81,6 @@ delete ptr;                       // 必须手动释放！
 /*
  * 文件名: memory_instantiation.cpp
  * 描述: 演示栈与堆的对象实例化、生命周期差异及智能指针的使用
- * 作者: Computer Science Freshman
  * 编译指令: g++ -o memory_test memory_instantiation.cpp -std=c++14
  */
 

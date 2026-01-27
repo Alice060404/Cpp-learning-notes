@@ -81,7 +81,6 @@ public:
 /*
  * 文件名: initialization_list_demo.cpp
  * 描述: 演示 C++ 成员初始化列表的语法、性能差异及陷阱
- * 作者: Computer Science Freshman
  */
 
 #include <iostream>
