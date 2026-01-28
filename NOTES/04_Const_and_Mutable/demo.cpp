@@ -1,7 +1,6 @@
 /**
  * @file const_mutable_demo.cpp
  * @brief 深度演示 Const 指针规则、Const 成员函数以及 Mutable 在缓存/Lambda 中的应用
- * @note 适合复制到本地 IDE (如 VS Code, CLion) 运行调试
  */
 
 #include <iostream>

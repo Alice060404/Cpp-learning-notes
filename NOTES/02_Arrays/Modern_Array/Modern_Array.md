@@ -56,7 +56,6 @@
 /*
  * 文件名: std_array_demo.cpp
  * 描述: 演示 std::array 的声明、与 C 数组的对比、越界检查及 STL 算法结合
- * 编译: g++ -o array_test std_array_demo.cpp -std=c++14
  */
 
 #include <iostream>

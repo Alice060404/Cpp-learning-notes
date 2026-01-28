@@ -21,7 +21,7 @@
 | :--- | :--- | :--- | :--- |
 | `const int* p` | **底层 Const** (Low-level) | p 指向一个 **int 常量** | 指针可变，内容不可变 |
 | `int* const p` | **顶层 Const** (Top-level) | p 是一个 **常量指针** 指向 int | 指针不可变，内容可变 |
-| `const int* const p` | **双重 Const** | p 是一个 **常量指针** 指向 **int 常量** | 统统不可变 |
+| `const int* const p` | **双重 Const** | p 是一个 **常量指针** 指向 **int 常量** | 指针与内容均不可变 |
 
 ## 3. 类与成员函数中的 Const
 在面向对象编程中，`const` 用于保证对象的状态安全。

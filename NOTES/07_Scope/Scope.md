@@ -44,7 +44,6 @@
 /*
  * 文件名: lifetime_and_scope.cpp
  * 描述: 演示栈作用域的自动化管理、悬空指针陷阱以及 RAII 模式的应用
- * 作者: Computer Science Freshman
  */
 
 #include <iostream>

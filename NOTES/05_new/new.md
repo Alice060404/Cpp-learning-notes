@@ -81,7 +81,6 @@
 /*
  * 文件名: memory_management_deep_dive.cpp
  * 描述: 演示栈/堆实例化、new 的底层行为、数组分配及 Placement New
- * 适用身份: Computer Science Freshman / C++ Developer
  */
 
 #include <iostream>
@@ -183,5 +182,5 @@ int main() {
 ### 学习建议（针对 CS 大一学生）
 
 1. **首选栈**：在 95% 的情况下，优先在栈上创建对象 (`Tracker t;`)。它快且不会内存泄漏。
-2. **理解指针**：`new` 返回的是**地址**（指针）。理解“指针在栈上，指向的数据在堆上”这个图景非常重要。
-3. **RAII 是未来**：虽然现在你必须学习 `new/delete` 以理解原理，但在实际的大型 C++ 工程中，我们几乎总是使用 `std::unique_ptr` 或 `std::shared_ptr`（智能指针）来代替裸指针，从而自动管理 `delete`。
+2. **理解指针**：`new` 返回的是**地址**（指针）。理解“指针在栈上，指向的数据在堆上”非常重要。
+3. **RAII 是未来**：虽然现在学习 `new/delete` 以理解原理，但在实际的大型 C++ 工程中，几乎总是使用 `std::unique_ptr` 或 `std::shared_ptr`来代替裸指针，从而自动管理 `delete`。

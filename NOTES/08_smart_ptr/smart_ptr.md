@@ -18,8 +18,8 @@
 
 * **特性**：**独占所有权**。同一时间内，只能有一个 `unique_ptr` 指向该对象。
 * **机制**：
-* **不可复制**：`unique_ptr<T> p2 = p1;` // ? 编译报错！
-* **可移动**：`unique_ptr<T> p2 = std::move(p1);` // ? 所有权转移，p1 变为空。
+* **不可复制**：`unique_ptr<T> p2 = p1;` //  编译报错！
+* **可移动**：`unique_ptr<T> p2 = std::move(p1);` //  所有权转移，p1 变为空。
 
 
 * **性能**：几乎零开销（和裸指针一样快），不需要维护引用计数。
@@ -64,7 +64,7 @@
  */
 
 #include <iostream>
-#include <memory> // 必须包含头文件
+#include <memory>
 #include <string>
 
 using namespace std;
