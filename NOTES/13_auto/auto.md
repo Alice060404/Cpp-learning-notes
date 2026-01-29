@@ -7,7 +7,7 @@
 
 * **不是动态类型**：`auto` 变量的类型在**编译时 (Compile Time)** 就已经确定了。一旦确定，运行时绝不会改变。
 * **零成本抽象**：使用 `auto` 不会有任何运行时性能损耗（Performance Cost），它生成的机器码和手动写出类型是一模一样的。
-* **推导规则**：`auto` 的推导规则极其类似于**模板参数推导**。
+* **推导规则**：`auto` 的推导规则类似于**模板参数推导**。
 
 ## 2. 关键陷阱：类型退化 (Type Decay)
 
@@ -46,7 +46,7 @@ auto z = cx;  // z 的类型是 int，而不是 const int。你可以修改 z。
 
 
 2. **范围 For 循环**：
-* `for (const auto& item : container)` —— 标准写法，避免拷贝。
+* `for (const auto& item : container)` —— 标准写法，引用避免拷贝。
 
 
 3. **Lambda 表达式**：Lambda 的类型是编译器生成的匿名类，无法手写，**必须**用 `auto`。

@@ -48,7 +48,7 @@
 
 
 
-## 4. ?? 绝对禁忌：头文件中的 `using namespace`
+## 4.  绝对禁忌：头文件中的 `using namespace`
 
 这是 CS 新生最容易犯的错误，也是工程开发的大忌。
 
@@ -116,7 +116,7 @@ int main() {
         using namespace Apple;
         Print(); // 默认调用 Apple::Print()
         
-        // Init(); // ? 编译错误！如果 Orange 也在 scope 里，会产生歧义
+        // Init(); //  编译错误！如果 Orange 也在 scope 里，会产生歧义
         // 即使使用了 using，为了清晰，最好还是加上前缀
     }
     

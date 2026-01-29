@@ -33,7 +33,7 @@
 | **混合捕获** | `[&, x]` | 默认按引用，但 `x` 按值 | 精细控制 |
 | **this 捕获** | `[this]` | 捕获当前类对象的指针 | 允许 Lambda 访问类的成员变量 |
 
-> **?? 致命陷阱**：绝对不要在返回一个 Lambda 的同时，使用 `[&]` 捕获局部变量。因为函数结束后局部变量销毁，Lambda 拿到的引用变成了“野指针”。
+> **致命陷阱**：绝对不要在返回一个 Lambda 的同时，使用 `[&]` 捕获局部变量。因为函数结束后局部变量销毁，Lambda 拿到的引用变成了“野指针”。
 
 ## 4. `mutable` 的作用
 
@@ -97,7 +97,7 @@ void CaptureDemo() {
     // [=] 按值捕获 (Read-only Copy)
     // 这里的 x 是外部 x 的一份拷贝，且默认是 const
     auto captureByValue = [=]() {
-        // x++; // ? 编译错误！x 是只读的
+        // x++; //  编译错误！x 是只读的
         cout << "  [Value] x: " << x << endl;
     };
     captureByValue();
@@ -105,7 +105,7 @@ void CaptureDemo() {
     // [=] + mutable (Modifiable Copy)
     // 允许修改拷贝进来的 x，但不会影响外部的 x
     auto captureMutable = [=]() mutable {
-        x++; // ? 合法，修改的是 Lambda 内部的副本
+        x++; //  合法，修改的是 Lambda 内部的副本
         cout << "  [Mutable] x internal: " << x << endl;
     };
     captureMutable();
@@ -114,7 +114,7 @@ void CaptureDemo() {
     // [&] 按引用捕获 (Read/Write Reference)
     // 直接操作外部变量，不需要 mutable
     auto captureByRef = [&]() {
-        y++; // ? 修改了外部的 y
+        y++; //  修改了外部的 y
         cout << "  [Ref] y internal: " << y << endl;
     };
     captureByRef();

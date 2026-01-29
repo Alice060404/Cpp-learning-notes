@@ -57,7 +57,6 @@
 /*
  * 文件名: macros_demo.cpp
  * 描述: 演示宏的文本替换本质、经典陷阱、条件编译及日志系统的实现
- * 编译: g++ -o macros macros_demo.cpp
  */
 
 #include <iostream>

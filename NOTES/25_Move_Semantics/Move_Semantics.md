@@ -1,4 +1,4 @@
-[MindMap](./Move%20Semantics.png)
+[MindMap](./Move_Semantics.png)
 
 
 # C++ 核心笔记：移动语义 (Move Semantics)
