@@ -68,7 +68,6 @@
 
 ##  4. 实战练习代码
 
-你可以直接复制下面的代码到你的 IDE（Visual Studio 或 VS Code + WSL）中进行练习。
 
 > **文件名**: `debug_practice.cpp`
 

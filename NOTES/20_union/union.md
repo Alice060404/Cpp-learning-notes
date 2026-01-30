@@ -57,7 +57,6 @@
 ```cpp
 /*
  * Filename: union_mastery.cpp
- * Author: [Your Name]
  * Date: 2026-01-24
  * Description: Comprehensive example of C++ Unions, covering memory layout,
  * type punning, and anonymous unions for vector math.

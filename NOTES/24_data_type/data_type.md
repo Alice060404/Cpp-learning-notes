@@ -18,7 +18,7 @@
 
 * `has_value()` »ò `operator bool()`£º¼ì²éÊÇ·ñÓÐÖµ¡£
 * `value()`£º»ñÈ¡Öµ¡£Èç¹ûÎª¿Õ£¬Å×³ö `std::bad_optional_access` Òì³£¡£
-* `value_or(default_value)`£º**×îÍÆ¼öµÄ·½·¨**¡£Èç¹ûÓÐÖµÔò·µ»Ø£¬ÎÞÖµÔò·µ»ØÄãÖ¸¶¨µÄÄ¬ÈÏÖµ¡£
+* `value_or(default_value)`£º**×îÍÆ¼öµÄ·½·¨**¡£Èç¹ûÓÐÖµÔò·µ»Ø£¬ÎÞÖµÔò·µ»ØÄãÖ¸¶¨µÄÄ¬ÈÏÖµ(default_value)¡£
 * `*` (½âÒýÓÃ) ºÍ `->` (¼ýÍ·ÔËËã·û)£ºÏñÊ¹ÓÃÖ¸ÕëÒ»ÑùÊ¹ÓÃËü£¬µ«Òª×¢Òâ£¬Èç¹ûÎª¿ÕÖ±½Ó½âÒýÓÃÊÇ**Î´¶¨ÒåÐÐÎª**£¨Undefined Behavior£©£¬Í¨³£»áµ¼ÖÂ³ÌÐò±ÀÀ£¡£
 
 ### ×î¼ÑÊµ¼ù
@@ -68,7 +68,7 @@ C ÓïÑÔ·ç¸ñµÄ `union` ¼«ÆäÎ£ÏÕ£¬ÒòÎªËü²»ÖªµÀµ±Ç°´æ´¢µÄµ½µ×ÊÇÄÄ¸öÀàÐÍ£¬¶ÁÈ¡´íÎó»áµ
 
 ---
 
-## 4. ÊµÕ½´úÂëÊ¾Àý (GitHub ±Ê¼Ç°æ)
+## 4. ÊµÕ½´úÂëÊ¾Àý
 
 ÒÔÏÂ´úÂë½«Èý¸öÌØÐÔ½áºÏÔÚÒ»¸ö³¡¾°ÖÐ£ºÄ£ÄâÒ»¸ö¼òµ¥µÄÓÎÏ·ÅäÖÃ¶ÁÈ¡ÏµÍ³¡£
 
